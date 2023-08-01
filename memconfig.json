@@ -5,8 +5,15 @@
         "name": "Root",
         "actions": [
           {
-            "name": "setup",
-            "type": "Void"
+            "name": "configure",
+            "type": "Void",
+            "params": [
+              {
+                "name": "audienceId",
+                "description": "The Mailchimp audience ID",
+                "type": "String"
+              }
+            ]
           },
           {
             "name": "handler",
@@ -18,7 +25,6 @@
   },
   "dependencies": {
     "sms": "sms:",
-    "mailchimp": "mailchimp:",
-    "audience": "mailchimp:audiences.one(id:\"26f7ecad1a\")"
+    "audiences": "mailchimp:audiences"
   }
 }

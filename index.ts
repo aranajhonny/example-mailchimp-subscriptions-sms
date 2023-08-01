@@ -3,8 +3,9 @@
 // `state` is an object that persists across program updates. Store data here.
 import { nodes, root, state } from 'membrane';
 
-export async function setup() {
-  await nodes.audience.subscriptions.$subscribe(root.handler);
+export async function configure({ args: { audienceId }}) {
+  const audience = await nodes.audiences.one({ id: audienceId });
+  await audience.subscriptions.$subscribe(root.handler);
 }
 
 export async function handler({ event }) {
