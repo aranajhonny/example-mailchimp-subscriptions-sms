@@ -6,7 +6,7 @@ This is a Membrane program that send a Sms when a new Mailchimp subscriber is ad
 
 Paste the following URL in your browser to open the directory inside the Membrane VSCode Extension.
 
-vscode://membrane.membrane/directory/example-mailchimp-to-sms
+vscode://membrane.membrane/directory/example-mailchimp-subscriptions-sms
 
 Run `:configure` with the following arguments:
 
